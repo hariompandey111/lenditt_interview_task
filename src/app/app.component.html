@@ -7,7 +7,9 @@
     <mat-form-field>
       <input matInput (keyup)="applySearchFilter($event)" formControlName="SearchName" placeholder="Search" #input>
     </mat-form-field>
-    <span class="date-input--wrapper">
+
+
+    <div>
       <mat-form-field>
         <input matInput
           [matDatepicker]="fromDate"
@@ -28,7 +30,8 @@
 
      <button mat-button color="primary" class="submit-dates-button" (click)="applyDateFilter()">Submit Dates</button>
 
-    </span>
+    </div>
+
 
    <mat-form-field appearance="fill">
     <mat-label>Type</mat-label>
@@ -59,7 +62,7 @@
     <!-- Created Date Column -->
     <ng-container matColumnDef="creation-date">
       <th mat-header-cell *matHeaderCellDef mat-sort-header> Creation Date </th>
-      <td mat-cell *matCellDef="let element"> {{element.creationDate | date:'short'}} </td>
+      <td mat-cell *matCellDef="let element"> {{element.creationDate | date:'mediumDate'}} </td>
     </ng-container>
 
     <!-- Symbol Column -->

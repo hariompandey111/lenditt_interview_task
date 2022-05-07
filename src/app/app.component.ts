@@ -18,107 +18,107 @@ export interface UserData {
 const ELEMENT_DATA: UserData[] = [
   {
     name: 'Jack',
-    creationDate:new Date('December 17, 1995 03:24:00'),
+    creationDate:new Date('December 17, 1995'),
     type: PersonType.User
   },
   {
     name: 'Kent',
-    creationDate: new Date('December 17, 2002 03:24:00'),
+    creationDate: new Date('December 17, 2002'),
     type: PersonType.User,
   },
   {
     name: 'Malini',
-    creationDate: new Date('August 17, 2022 03:24:00'),
+    creationDate: new Date('August 17, 2022'),
     type: PersonType.User,
   },
   {
-    name: 'Shalini',
-    creationDate: new Date('August 17, 2022 03:24:00'),
+    name: 'Shalini Talwar',
+    creationDate: new Date('2022, 03, 24'),
     type: PersonType.Admin,
   },
   {
-    name: 'Jack',
-    creationDate:new Date('December 17, 1995 03:24:00'),
+    name: 'Ashish',
+    creationDate:new Date('December 17, 1995'),
     type: PersonType.User
   },
   {
-    name: 'Kent',
-    creationDate: new Date('December 17, 2002 03:24:00'),
+    name: 'Kalpesh',
+    creationDate: new Date('December 17, 2002'),
     type: PersonType.User,
   },
   {
-    name: 'Malini',
-    creationDate: new Date('August 17, 2022 03:24:00'),
+    name: 'Mohini',
+    creationDate: new Date('August 17, 2022'),
     type: PersonType.User,
   },
   {
-    name: 'Shalini',
-    creationDate: new Date('August 17, 2022 03:24:00'),
+    name: 'Lalu',
+    creationDate: new Date('August 17, 2022'),
     type: PersonType.Admin,
   },
   {
-    name: 'Jack',
-    creationDate:new Date('December 17, 1995 03:24:00'),
+    name: 'Padmini',
+    creationDate:new Date('December 17, 1995'),
     type: PersonType.User
   },
   {
-    name: 'Kent',
-    creationDate: new Date('December 17, 2002 03:24:00'),
+    name: 'Shailesh',
+    creationDate: new Date('December 17, 2002'),
     type: PersonType.User,
   },
   {
-    name: 'Malini',
-    creationDate: new Date('August 17, 2022 03:24:00'),
+    name: 'Yagnesh',
+    creationDate: new Date('August 17, 2022'),
     type: PersonType.User,
   },
   {
-    name: 'Shalini',
-    creationDate: new Date('August 17, 2022 03:24:00'),
+    name: 'Dhruv',
+    creationDate: new Date('August 17, 2022'),
     type: PersonType.Admin,
   },
   {
-    name: 'Jack',
-    creationDate:new Date('December 17, 1995 03:24:00'),
+    name: 'Jayesh',
+    creationDate:new Date('December 17, 1995'),
     type: PersonType.User
   },
   {
-    name: 'Kent',
-    creationDate: new Date('December 17, 2002 03:24:00'),
+    name: 'Rohan',
+    creationDate: new Date('December 17, 2002'),
     type: PersonType.User,
   },
   {
-    name: 'Malini',
-    creationDate: new Date('August 17, 2022 03:24:00'),
+    name: 'Rachna',
+    creationDate: new Date('July 17, 2022'),
     type: PersonType.User,
   },
   {
-    name: 'Malini',
-    creationDate: new Date('August 17, 2022 03:24:00'),
+    name: 'Alok',
+    creationDate: new Date('August 17, 2022'),
     type: PersonType.Admin,
   },
   {
-    name: 'Shalini',
-    creationDate: new Date('August 17, 2022 03:24:00'),
+    name: 'Shivam',
+    creationDate: new Date('August 17, 2022'),
     type: PersonType.Admin,
   },
   {
-    name: 'Jack',
-    creationDate:new Date('December 17, 1995 03:24:00'),
+    name: 'Pavan',
+    creationDate:new Date('December 17, 1995'),
     type: PersonType.User
   },
   {
-    name: 'Kent',
-    creationDate: new Date('December 17, 2002 03:24:00'),
+    name: 'Narendra',
+    creationDate: new Date('December 17, 2002'),
     type: PersonType.User,
   },
   {
-    name: 'Malini',
-    creationDate: new Date('August 17, 2022 03:24:00'),
+    name: 'Ayushi',
+    creationDate: new Date('August 17, 2022'),
     type: PersonType.User,
   },
   {
-    name: 'Shalini',
-    creationDate: new Date('August 17, 2022 03:24:00'),
+    name: 'Padmanabhan',
+    creationDate: new Date('August 17, 2022'),
     type: PersonType.Admin,
   },
 
