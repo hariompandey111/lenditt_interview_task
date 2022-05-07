@@ -32,7 +32,7 @@ const ELEMENT_DATA: UserData[] = [
     type: PersonType.User,
   },
   {
-    name: 'Shalini Talwar',
+    name: 'Shalini',
     creationDate: new Date('2022, 03, 24'),
     type: PersonType.Admin,
   },
@@ -132,6 +132,7 @@ export class AppComponent implements AfterViewInit  {
   displayedColumns: string[] = ['name', 'creation-date', 'type'];
   dataSource: MatTableDataSource<UserData>;
   selectedType: string ='';
+
   @ViewChild(MatPaginator) paginator: MatPaginator;
   @ViewChild(MatSort) sort: MatSort;
 
@@ -184,10 +185,9 @@ export class AppComponent implements AfterViewInit  {
 
         if( searchFilterApplied || dateFilterApplied  || typeFilterApplied )
             if (searchFilterApplied && dateFilterApplied && typeFilterApplied) {
-
-              return data.creationDate >= this.fromDate && data.creationDate <= this.fromDate &&
+              return data.creationDate >= this.fromDate && data.creationDate <= this.toDate &&
               data.name.toLowerCase().includes(allFilters.searchValue)&&
-              data.type.toUpperCase() === this.selectedType;
+              data.type.toUpperCase().includes(this.selectedType);
 
             } else if(searchFilterApplied && dateFilterApplied ){
 
@@ -197,12 +197,12 @@ export class AppComponent implements AfterViewInit  {
             } else if(searchFilterApplied && typeFilterApplied ){
 
               return data.name.toLowerCase().includes(allFilters.searchValue) &&
-              data.type.toUpperCase() === this.selectedType;
+              data.type.toUpperCase().includes(this.selectedType)
 
             } else if (dateFilterApplied && typeFilterApplied ){
 
-              return data.creationDate >= this.fromDate && data.creationDate <= this.fromDate &&
-              data.type.toUpperCase() === this.selectedType;
+              return data.creationDate >= this.fromDate && data.creationDate <= this.toDate &&
+              data.type.toUpperCase().includes(this.selectedType)
 
             } else if(searchFilterApplied ) {
 
@@ -214,12 +214,10 @@ export class AppComponent implements AfterViewInit  {
 
             } else if(typeFilterApplied){
 
-              return data.type.toUpperCase() === this.selectedType;
+              return data.type.toUpperCase().includes(this.selectedType)
 
             }
-        // return dateFilterApplied?data.creationDate >= this.fromDate && data.creationDate <= this.fromDate:true &&
-        //   searchFilterApplied? data.name.toLowerCase().includes(allFilters.searchValue):true &&
-        //   typeFilterApplied? data.type.toUpperCase() === this.selectedType:true;
+
       }
 
       // If the filter is empty, return true to show all rows
